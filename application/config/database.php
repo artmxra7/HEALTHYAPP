@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'heryudamedika_app';
-$db['default']['password'] = 'bismillah0k3';
-$db['default']['database'] = 'heryudamedika_app';
+$db['default']['username'] = 'root';
+$db['default']['password'] = 'denijulisetiawan112';
+$db['default']['database'] = 'healthyapp';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

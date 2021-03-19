@@ -21,7 +21,7 @@ function required() {
     $RTR = & load_class('Router');
 
 
-    if ($RTR->class != "frontend" && $RTR->class != "request" && $RTR->class != "auth") {
+    if ($RTR->class != "frontend" && $RTR->class != "request" && $RTR->class != "auth" && $RTR->class != "antigen") {
         if (!$CI->ion_auth->logged_in()) {
             redirect('auth/login');
         }
@@ -36,7 +36,7 @@ function required() {
 
 
 
-    if ($RTR->class != "frontend" && $RTR->class != "request" && $RTR->class != "auth") {
+    if ($RTR->class != "frontend" && $RTR->class != "request" && $RTR->class != "auth" && $RTR->class != "antigen") {
         if (!$CI->ion_auth->in_group(array('superadmin'))) {
             if ($CI->ion_auth->in_group(array('admin'))) {
                 $current_user_id = $CI->ion_auth->user()->row()->id;
@@ -65,7 +65,7 @@ function required() {
     }
 
 
-    if ($RTR->class != "frontend" && $RTR->class != "request" && $RTR->class != "auth") {
+    if ($RTR->class != "frontend" && $RTR->class != "request" && $RTR->class != "auth" && $RTR->class != "antigen") {
         if (!$CI->ion_auth->in_group(array('superadmin'))) {
             $CI->db->where('hospital_id', $CI->hospital_id);
             $CI->language = $CI->db->get('settings')->row()->language;
@@ -83,7 +83,7 @@ function required() {
         $CI->lang->load('system_syntax', $CI->language);
     }
 
-    if ($RTR->class != "frontend" && $RTR->class != "request" && $RTR->class != "auth") {
+    if ($RTR->class != "frontend" && $RTR->class != "request" && $RTR->class != "auth" && $RTR->class != "antigen") {
         if (!$CI->ion_auth->in_group(array('superadmin'))) {
             if ($CI->ion_auth->in_group(array('admin'))) {
                 $current_user_id = $CI->ion_auth->user()->row()->id;
@@ -102,7 +102,7 @@ function required() {
     }
 
 
-    $common = array('auth', 'frontend', 'settings', 'home', 'profile', 'request');
+    $common = array('auth', 'frontend', 'settings', 'home', 'profile', 'request', 'suket', 'antigen');
 
     if (!in_array($RTR->class, $common)) {
         if (!$CI->ion_auth->in_group(array('superadmin'))) {

@@ -1102,18 +1102,24 @@ $lang['general_settings'] = 'Pengaturan Umum';
 $lang['recommende3d_size'] = 'Ukuran yang disarankan';
 $lang['block_text_settings'] = 'Blokir Pengaturan Teks';
 $lang['social_settings'] = 'Pengaturan Sosial';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$lang['suket'] = 'Suket';
+$lang['add_antigen'] = 'Tambah Antigen';
+$lang['add_anti_body'] = 'Tambah Anti Body';
+$lang['add_suket_sehat'] = 'Tambah Suket Sehat';
+$lang['view_list'] = 'Lihat List';
+$lang['place_birth'] = 'Tempat Lahir';
+$lang['positif'] = 'Positif';
+$lang['negatif'] = 'Negatif';
+$lang['reaktif'] = 'Reaktif';
+$lang['non_reaktif'] = 'Non-Reaktif';
+$lang['lang_surat_sehat_sakit'] = 'Surat Sehat/Sakit';
+$lang['butuh_istirahat'] = 'Butuh Istirahat';
+$lang['hari'] = 'Hari';
+$lang['jenis_suket'] = 'Jenis Suket';
+$lang['tanggal_test'] = 'Tanggal Test';
+$lang['sick'] = 'Sakit';
+$lang['health'] = 'Sehat';
+$lang['edit_suket'] = 'Edit Suket';
+$lang['spesimen'] = 'Spesimen';
+$lang['keterangan'] = 'Keterangan';
+$lang['note'] = 'Catatan';

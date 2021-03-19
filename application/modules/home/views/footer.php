@@ -52,7 +52,8 @@
 <script src="common/assets/fullcalendar/fullcalendar.js"></script>
 
 <script type="text/javascript" src="common/assets/bootstrap-fileupload/bootstrap-fileupload.js"></script>
-
+<script type="text/javascript" src="common/js/jquery-qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
 
 <?php
 $language = $this->db->get('settings')->row()->language;

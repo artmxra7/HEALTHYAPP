@@ -1,0 +1,72 @@
+/* Suket */
+.container-view-suket {
+	max-width: 900px;
+	font-family: "Times New Roman", Times, serif;
+	margin-top: 20px;
+}
+.container-view-suket .table {
+	margin-top: 20px;
+	font-size: 18px;
+}
+.container-view-suket .pembukaan {
+	font-size: 18px;
+}
+.container-view-suket .table table {
+	width: 100% !important;
+}
+.container-view-suket .info-text {
+	font-size: 18px;
+}
+.container-view-suket p {
+	font-size: 18px;
+}
+.container-view-suket .info-text {
+	font-weight: bold;
+}
+.container-view-suket .hasil {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container-view-suket .container-hasil {
+	margin: auto;
+	width: max-content;
+	max-width: 100%;
+}
+.container-view-suket .title-keterangan {
+	margin-top: 20px;
+}
+.container-view-suket .content {
+	padding: 10px;
+}
+.container-view-suket .logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.container-view-suket .container-logo {
+	text-align: center;
+	border-bottom: 2px solid #000;
+}
+.container-view-suket .container-logo .logo .logo-img {
+	width: 10%;
+}
+.container-view-suket .container-logo .logo .logo-text {
+	width: 85%;
+}
+.container-view-suket .container-logo .alamat {
+	font-size: 18px;
+}
+.container-view-suket .content .keterangan {
+	font-size: 15px;
+}
+.bg-white {
+	background-color: white;
+}
+.container-view-suket.print {
+	margin-top: 2.54cm;
+	margin-left: 1.9cm;
+	margin-right: 1.32cm;
+	margin-bottom: 3.67cm;
+}

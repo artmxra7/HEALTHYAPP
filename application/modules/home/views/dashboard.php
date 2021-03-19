@@ -65,12 +65,10 @@
           <script src="js/html5shiv.js"></script>
           <script src="js/respond.min.js"></script>
         <![endif]-->
-
-
     <?php
-    if (!$this->ion_auth->in_group(array('superadmin'))) {
-        if ($settings_lang == 'arabic') {
-    ?>
+        if (!$this->ion_auth->in_group(array('superadmin'))) {
+            if ($settings_lang == 'arabic') {
+        ?>
             <style>
                 #main-content {
                     margin-right: 211px;
@@ -1363,6 +1361,41 @@
                             </a>
                         </li>
 
+                    <?php } ?>
+
+                    <?php if ($this->ion_auth->in_group(array('admin'))) { ?>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="fa fa-file"></i>
+                                <span><?php echo lang('suket'); ?></span>
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="suket/add_antigen">
+                                        <i class="fa fa-plus"></i>
+                                        <?php echo lang('add_antigen'); ?>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="suket/add_antibody">
+                                        <i class="fa fa-plus"></i>
+                                        <?php echo lang('add_anti_body'); ?>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="suket/add_suket_sehat">
+                                        <i class="fa fa-plus"></i>
+                                        <?php echo lang('add_suket_sehat'); ?>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="suket/view_list">
+                                        <i class="fa fa-list"></i>
+                                        <?php echo lang('view_list'); ?>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     <?php } ?>
 
 

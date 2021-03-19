@@ -1129,16 +1129,25 @@ $lang['potongan'] = 'Salary Subtraction';
 $lang['add_payroll'] = 'Add Payroll';
 $lang['no_purchase_invoice'] = 'No Purchase Invoice';
 $lang['po_company'] = 'Product Company';
-
-
-
-
-
-
-
-
-
-
-
-
-
+$lang['suket'] = 'Suket';
+$lang['add_antigen'] = 'Add Antigen';
+$lang['add_anti_body'] = 'Add Anti Body';
+$lang['add_suket_sehat'] = 'Add Suket Sehat';
+$lang['view_list'] = 'View List';
+$lang['ktp'] = 'KTP';
+$lang['place_birth'] = 'Place of birth';
+$lang['positif'] = 'Positive';
+$lang['negatif'] = 'Negative';
+$lang['reaktif'] = 'Reaktive';
+$lang['non_reaktif'] = 'Non-Reaktif';
+$lang['lang_surat_sehat_sakit'] = 'Health / Sick Letter';
+$lang['butuh_istirahat'] = 'Need rest';
+$lang['hari'] = 'Day';
+$lang['jenis_suket'] = 'Jenis Suket';
+$lang['tanggal_test'] = 'Test Date';
+$lang['sick'] = 'Sick';
+$lang['health'] = 'Health';
+$lang['edit_suket'] = 'Edit Suket';
+$lang['spesimen'] = 'Spesimen';
+$lang['keterangan'] = 'Information';
+$lang['note'] = 'Note';
