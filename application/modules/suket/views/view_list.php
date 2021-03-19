@@ -76,12 +76,12 @@
                         <table style="width: 100%;margin-bottom:50px">
                             <tbody style="width: 100%;">
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">Nama</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">: Deni Juli Setiawan</td>
+                                    <td style="border: none;font-size: 18px;padding-left:0px;width:100px">Nama</td>
+                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <span class="print_dokter"></span></td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">Jabatan</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">: Kepala Dokter</td>
+                                    <td style="border: none;font-size: 18px;padding-left:0px;width:100px">Jabatan</td>
+                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_jabatan">: </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -109,16 +109,16 @@
                         <p style="font-size: 18px;margin-bottom:20px">Dari hasil pemeriksaan <span class="print_jenis_suket"></span> pada tanggal, <span class="print_tgl"></span> Saya menyatakan:</p>
                         <p style="font-size: 18px;margin-bottom:20px"><b><i class="print_note"></i></b></p>
                         <p style="font-size: 18px;margin-bottom:20px">Hasil Pemeriksaan:</p>
-                        <h4 style="margin-top: 20px;margin-bottom:30px;margin-left:40px;display:none" class="status_positif"><b>- SARS - COV2: <span class="print_status">-</span></b></h4>
-                        <h4 style="margin-top: 20px;margin-bottom:30px;margin-left:40px;display:none" class="status_ig_m"><b>- Repid  Tes IG- M SARS COVID 19 : <span class="print_status_ig_m">-</span></b></h4>
-                        <h4 style="margin-top: 20px;margin-bottom:30px;margin-left:40px;display:none" class="status_ig_g"><b>- Repid  Tes IG- G SARS COVID 19 : <span class="print_status_ig_g">-</span></b></h4>
+                        <h4 style="margin-top: 20px;margin-bottom:30px;margin-left:40px;display:none" class="show_status_positif"><b>- SARS - COV2: <span class="print_status">-</span></b></h4>
+                        <h4 style="margin-top: 20px;margin-bottom:30px;margin-left:40px;display:none" class="show_status_ig_m"><b>- Repid  Tes IG- M SARS COVID 19 : <span class="print_status_ig_m">-</span></b></h4>
+                        <h4 style="margin-top: 20px;margin-bottom:30px;margin-left:40px;display:none" class="show_status_ig_g"><b>- Repid  Tes IG- G SARS COVID 19 : <span class="print_status_ig_g">-</span></b></h4>
                         <p style="font-size: 18px;"><b>Keterangan :</b></p>
                         <p style="font-size: 18px;margin-bottom:80px" class="print_keterangan"></p>
                         <div style="width: 100%;display:flex;justify-content:space-between">
                             <div>
-                                <p style="font-size: 18px;text-align:center;margin-bottom:100px"><b class="print_dokter">Deni Juli Setiawan</b></p>
-                                <p style="font-size: 18px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px">(Deni Juli Setiawan)</p>
-                                <p style="font-size: 18px;text-align:center;text-decoration:underline;">NIP.28345793485734957</p>
+                                <p style="font-size: 18px;text-align:center;margin-bottom:100px"><b>HeryudaMeda</b></p>
+                                <p style="font-size: 18px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px" class="print_dokter">(Deni Juli Setiawan)</p>
+                                <p style="font-size: 18px;text-align:center;text-decoration:underline;" class="print_sip">SIP.-</p>
                             </div>
                             <div style="text-align:center;">
                                 <p style="font-size: 18px;text-align:center;">Bekasi, <span class="print_tgl_surat"></span></p>
@@ -147,10 +147,10 @@
                                 </tr>
                                 <tr>
                                     <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Umur</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_umur">: -</td>
+                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <span class="print_umur"></span> tahun, jenis kelamin: <span class="print_jenis_kelamin"></span></td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Pekerjaan</td>
+                                    <td style="border: none;font-size: 18px;padding-left:0px;width:200px" class="print_pekerjaan">Pekerjaan</td>
                                     <td style="border: none;font-size: 18px;padding-left:0px;" class="print_pekerjaan">: -</td>
                                 </tr>
                                 <tr>
@@ -177,23 +177,22 @@
                                 </tr>
                                 <tr>
                                     <td style="border: none;font-size: 18px;padding-left:0px;width:100px">Suhu</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <b class="print_suhu"></b></td>
+                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_suhu">: -</td>
                                 </tr>
                                 <tr>
                                     <td style="border: none;font-size: 18px;padding-left:0px;width:100px">Buta Warna</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <b class="print_buta_warna"></b></td>
+                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <b class="print_buta_warna">-</b></td>
                                 </tr>
                             </tbody>
                         </table>
                         <div style="width: 100%;display:flex;justify-content:space-between">
                             <div style="text-align:center;">
                                 <div class="qr-wrapper" data-url="{SCAN_URL}"></div>
-                                <p style="font-size: 18px;text-align:center;margin-top:10px" class="print_suket_code">NO: 1230929-ASD</p>
+                                <p style="font-size: 18px;text-align:center;margin-top:10px" class="print_suket_code">NO: -</p>
                             </div>
                             <div>
-                                <p style="font-size: 18px;text-align:center;">Bekasi, <span class="print_tgl_surat"></span></p>
-                                <p style="font-size: 18px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px">(Deni Juli Setiawan)</p>
-                                <p style="font-size: 18px;text-align:center;text-decoration:underline;">NIP.28345793485734957</p>
+                                <p style="font-size: 18px;text-align:center;margin-bottom:60px">Bekasi, <span class="print_tgl_surat"></span></p>
+                                <p style="font-size: 18px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px" class="print_dokter"></p>
                             </div>
                         </div>
                     </div>
@@ -231,7 +230,7 @@
                                 </tr>
                                 <tr>
                                     <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Umur</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">: - <span class="print_umur"></span> tahun, jenis kelamin: <span class="print_jenis_kelamin"></span></td>
+                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <span class="print_umur"></span> tahun, jenis kelamin: <span class="print_jenis_kelamin"></span></td>
                                 </tr>
                                 <tr>
                                     <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Pekerjaan</td>
@@ -250,8 +249,7 @@
                             <div>
                                 <p style="font-size: 18px;text-align:center;margin-bottom:0px">Bekasi, <span class="print_tgl_surat"></span></p>
                                 <p style="font-size: 18px;text-align:center;margin-bottom:50px">Dokter pemeriksa</p>
-                                <p style="font-size: 18px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px">(Deni Juli Setiawan)</p>
-                                <p style="font-size: 18px;text-align:center;text-decoration:underline;">NIP.28345793485734957</p>
+                                <p style="font-size: 18px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px" class="print_dokter"></p>
                             </div>
                         </div>
                     </div>
@@ -349,6 +347,15 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="col-md-8 payment pad_bot pull-right">
+                            <div class="col-md-3 payment_label"> 
+                                <label for="p_doctor"><?php echo lang('doctor'); ?></label>
+                            </div>
+                            <div class="col-md-9 m-bot15"> 
+                                <select class="form-control js-example-basic-single" id="p_doctor" name="p_doctor"> 
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-12 panel">
                         <div class="col-md-3 payment_label"> 
@@ -388,7 +395,7 @@
                                 <label for="status"><?php echo lang('status'); ?></label>
                             </div>
                             <div class="col-md-9"> 
-                                <select class="form-control m-bot15 js-example-basic-single status" id="status" name="status" required> 
+                                <select class="form-control m-bot15 js-example-basic-single status" id="status" name="status"> 
                                     <option value="positif"><?php echo lang('positif'); ?></option>
                                     <option value="negatif"><?php echo lang('negatif'); ?></option>
                                 </select>
@@ -401,7 +408,7 @@
                                 <label for="status_ig_m"><?php echo lang('status'); ?> IG-M</label>
                             </div>
                             <div class="col-md-9"> 
-                                <select class="form-control m-bot15 js-example-basic-single status" id="status_ig_m" name="status_ig_m" required> 
+                                <select class="form-control m-bot15 js-example-basic-single status" id="status_ig_m" name="status_ig_m"> 
                                     <option value="reaktif"><?php echo lang('reaktif'); ?></option>
                                     <option value="non reaktif"><?php echo lang('non_reaktif'); ?></option>
                                 </select>
@@ -412,7 +419,7 @@
                                 <label for="status_ig_g"><?php echo lang('status'); ?> IG-G</label>
                             </div>
                             <div class="col-md-9"> 
-                                <select class="form-control m-bot15 js-example-basic-single status" id="status_ig_g" name="status_ig_g" required> 
+                                <select class="form-control m-bot15 js-example-basic-single status" id="status_ig_g" name="status_ig_g"> 
                                     <option value="reaktif"><?php echo lang('reaktif'); ?></option>
                                     <option value="non reaktif"><?php echo lang('non_reaktif'); ?></option>
                                 </select>
@@ -425,13 +432,13 @@
                                 <label for="status_sehat"><?php echo lang('status'); ?></label>
                             </div>
                             <div class="col-md-9"> 
-                                <select class="form-control m-bot15 js-example-basic-single status_sehat" id="status_sehat" name="status_sehat" required> 
+                                <select class="form-control m-bot15 js-example-basic-single status_sehat" id="status_sehat" name="status_sehat"> 
                                     <option value="sakit"><?php echo lang('sick'); ?></option>
                                     <option value="sehat"><?php echo lang('health'); ?></option>
                                 </select>
                             </div>
                         </div>
-                        <div class="if-sehat">
+                        <div class="if-sakit">
                             <div class="col-md-12 panel ">
                                 <div class="col-md-3 payment_label"> 
                                     <label for="butuh_istirahat"> <?php echo lang('butuh_istirahat'); ?></label>
@@ -440,7 +447,7 @@
                                     <input type="number" class="form-control" name="butuh_istirahat" id="butuh_istirahat">
                                 </div>
                                 <div class="col-md-3 payment_label"> 
-                                    <label>/<?php echo lang('hari'); ?></label>
+                                    <label for="address">/<?php echo lang('hari'); ?></label>
                                 </div>
                             </div>
                             <div class="col-md-12 panel">
@@ -448,9 +455,76 @@
                                     <label for="date"> <?php echo lang('date'); ?></label>
                                 </div>
                                 <div class="col-md-9"> 
-                                    <input type="text" class="form-control datepicker" id="date" readonly="" name="date" required placeholder="">
+                                    <input type="text" class="form-control datepicker" id="date" readonly="" name="date" placeholder="">
                                 </div>
                             </div>
+                        </div>
+                        <div class="if-sehat">
+                            <div class="col-md-12 panel">
+                                <div class="col-md-3 payment_label"> 
+                                    <label for="tensi"> <?php echo lang('tensi'); ?></label>
+                                </div>
+                                <div class="col-md-6"> 
+                                    <input type="number" class="form-control" name="tensi" id="tensi">
+                                </div>
+                                <div class="col-md-3 payment_label"> 
+                                    <label for="tensi">mmHg</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 panel">
+                                <div class="col-md-3 payment_label"> 
+                                    <label for="suhu"> <?php echo lang('suhu'); ?></label>
+                                </div>
+                                <div class="col-md-6"> 
+                                    <input type="number" class="form-control" name="suhu" id="suhu">
+                                </div>
+                                <div class="col-md-3 payment_label"> 
+                                    <label for="tensi"><sup>&#48;</sup> C</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 panel">
+                                <div class="col-md-3 payment_label"> 
+                                    <label for="buta_warna"><?php echo lang('buta_warna'); ?></label>
+                                </div>
+                                <div class="col-md-9"> 
+                                    <select class="form-control m-bot15 js-example-basic-single status" id="buta_warna" name="buta_warna"> 
+                                        <option value="iya">Iya</option>
+                                        <option value="tidak">Tidak</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 panel">
+                            <div class="col-md-3 payment_label"> 
+                                <label for="pekerjaan"> <?php echo lang('pekerjaan'); ?></label>
+                            </div>
+                            <div class="col-md-9"> 
+                                <input type="text" class="form-control" name="pekerjaan" id="pekerjaan">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 panel">
+                        <div class="col-md-3 payment_label"> 
+                            <label for="spesimen"> <?php echo lang('spesimen'); ?></label>
+                        </div>
+                        <div class="col-md-9"> 
+                            <input type="text" class="form-control" name="spesimen" id="spesimen" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12 panel">
+                        <div class="col-md-3 payment_label"> 
+                            <label for="keterangan"> <?php echo lang('keterangan'); ?></label>
+                        </div>
+                        <div class="col-md-9"> 
+                            <input type="text" class="form-control" name="keterangan" id="keterangan" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12 panel">
+                        <div class="col-md-3 payment_label"> 
+                            <label for="note"> <?php echo lang('note'); ?></label>
+                        </div>
+                        <div class="col-md-9"> 
+                            <input type="text" class="form-control" name="note" id="note" required>
                         </div>
                     </div>
                     <div class="col-md-12 panel">
@@ -496,6 +570,9 @@
                 $("#address").val(response.suket.address)
                 $("#id_suket").val(response.suket.id)
                 $("#suket_type").val(response.suket.suket_type)
+                $("#spesimen").val(response.suket.spesimen)
+                $("#keterangan").val(response.suket.keterangan)
+                $("#note").val(response.suket.note)
                 if(response.suket.suket_type == 1){
                     $("#status").val(response.suket.status_positif)
                     $(".antibody-edit").hide()
@@ -507,8 +584,20 @@
                     $(".surat-edit").hide()
                 } else if(response.suket.suket_type == 3){
                     $("#status_sehat").val(response.suket.status_sehat)
-                    $("#butuh_istirahat").val(response.suket.istirahat)
-                    $("#date").val(response.suket.tanggal)
+                    if(response.suket.status_sehat == 'sakit') {
+                        $("#butuh_istirahat").val(response.suket.istirahat)
+                        $("#date").val(response.suket.tanggal)
+                        $('.if-sakit').show();
+                        $('.if-sehat').hide();
+                    } else {
+                        $('#tensi').val(response.suket.tensi);
+                        $('#suhu').val(response.suket.suhu);
+                        $('#buta_warna').val(response.suket.buta_warna);
+                        $('#pekerjaan').val(response.suket.pekerjaan);
+                        $('.if-sakit').hide();
+                        $('.if-sehat').show();
+                    }
+
                     $(".antigen-edit").hide()
                     $(".antibody-edit").hide()
                 }
@@ -579,6 +668,17 @@
         return tahun + '-' + bulan + '-' + tgl
     };
 
+    function getTanggalEnd(tanggal, istirahat){
+        let d = new Date(tanggal);
+        d.setDate(d.getDate()+parseInt(istirahat))
+        let date = d.getDate();
+        date = date < 10 ? '0'+date : date;
+        let bulan = d.getMonth() + 1;
+        bulan = bulan < 10 ? '0'+bulan : bulan
+        let year = d.getFullYear();
+        return bulan+'/'+date+'/'+year;
+    }
+
     $(document).ready(function () {
         $(".flashmessage").delay(3000).fadeOut(100);
     });
@@ -595,7 +695,8 @@
                 let suket_type = response.suket.suket_type;
                 let qr_wrapper = $('.qr-wrapper');
 
-                let url = 'http://localhost:8080/healthyapp/index.php/antigen/suket/'+response.suket.suket_code;
+                let url = `${window.location.origin}/healthyapp/index.php/antigen/suket/+response.suket.suket_code`;
+
                 qr_wrapper.empty().qrcode({
                     text: url,
                     background: '#fff',
@@ -607,7 +708,8 @@
                     minVersion: 3,
                     quiet: 5,
                 });
-                let birth_date = response.suket.birth_date.split('-');
+                let birth_date = response.suket.birth_date?.split('-');
+                let tanggalAkhir = null;
                 if(birth_date.length > 0){
                     birth_date = birth_date[1]+'/'+birth_date[0]+'/'+birth_date[2];
                     birth_date = formatTanggal(birth_date);
@@ -619,14 +721,18 @@
                 $('.print_alamat').text(': '+response.suket.address)
                 $('.print_tgl').text(add_date)
                 $('.print_dokter').text('Deni')
-                $('.print_suket_code').text(response.suket.suket_code)
+                $('.print_suket_code').text('NO: '+response.suket.suket_code)
                 $('.print_spesimen').text(response.suket.spesimen)
                 $('.print_keterangan').text(response.suket.keterangan)
                 $('.print_note').text(response.suket.note)
                 $('.print_tgl_surat').text(tanggal_surat)
                 if(response.suket.suket_type == 1){
+                    $('.show_status_positif').show();
                     $('.print_status').text(response.suket.status_positif)
                     $('.print_jenis_suket').text('Swab Tes Antigen')
+                    $('.print_dokter').text(response.doctor.name)
+                    $('.print_jabatan').text(': '+response.doctor.jabatan)
+                    $('.print_sip').text('SIP: '+response.doctor.profile)
                     $('#pdf-antigen').show()
                     const doc = new jsPDF();
                     doc.addHTML($('#pdf-antigen')[0], function () {
@@ -635,8 +741,13 @@
                     });
                 } else if(response.suket.suket_type == 2){
                     $('.print_jenis_suket').text('Antibody')
+                    $('.show_status_ig_m').show()
                     $('.print_status_ig_m').text(response.suket.status_ig_m)
+                    $('.show_status_ig_g').show()
                     $('.print_status_ig_g').text(response.suket.status_ig_g)
+                    $('.print_dokter').text(response.doctor.name)
+                    $('.print_jabatan').text(': '+response.doctor.jabatan)
+                    $('.print_sip').text('SIP: '+response.doctor.profile)
                     $('#pdf-antigen').show()
                     const doc = new jsPDF();
                     doc.addHTML($('#pdf-antigen')[0], function () {
@@ -644,12 +755,40 @@
                         $('#pdf-antigen').css('display', 'none');
                     });
                 } else if(response.suket.suket_type == 3){
-                    $('#pdf-sakit').show()
-                    const doc = new jsPDF('l');
-                    doc.addHTML($('#pdf-sakit')[0], function () {
-                        doc.save('suket sehat-'+response.suket.suket_code+'.pdf');
-                        $('#pdf-sakit').css('display', 'none');
-                    });
+                    let tanggal = response.suket.tanggal?.split('-');
+                    if(response.suket.tanggal != '' && tanggal.length > 0){
+                        tanggal = tanggal[1]+'/'+tanggal[0]+'/'+tanggal[2];
+                        tanggalAkhir = getTanggalEnd(tanggal, response.suket.istirahat);
+                        tanggalAkhir = formatTanggal(tanggalAkhir)
+                        tanggal = formatTanggal(tanggal);
+                    }
+                    $('.print_umur').text(response.user.age);
+                    $('.print_jenis_kelamin').text(response.user.sex == 'Male' ? 'Laki-laki' : 'Perempuan');
+                    $('.print_pekerjaan').text(': '+response.suket.pekerjaan);
+                    $('.print_alamat').text(': '+response.suket.address);
+                    if(response.suket.status_sehat == 'sakit'){
+                        $('.print_istirahat').text(response.suket.istirahat)
+                        $('.print_tgl_mulai').text(tanggal)
+                        $('.print_tgl_akhir').text(tanggalAkhir)
+                        $('#pdf-sakit').show()
+                        const doc = new jsPDF('l');
+                        doc.addHTML($('#pdf-sakit')[0], function () {
+                            doc.save('suket sakit-'+response.suket.suket_code+'.pdf');
+                            $('#pdf-sakit').css('display', 'none');
+                        });
+                    } else {
+                        $('.print_bb').text(': '+response.user.b_badan+' Kg')
+                        $('.print_tb').text(': '+response.user.t_badan+' Cm')
+                        $('.print_tensi').text(': '+response.suket.tensi+' mmHg')
+                        $('.print_suhu').html(': '+response.suket.suhu+' <sup>&#48;</sup>C')
+                        $('.print_buta_warna').text(response.suket.buta_warna)
+                        $('#pdf-sehat').show()
+                        const doc = new jsPDF();
+                        doc.addHTML($('#pdf-sehat')[0], function () {
+                            doc.save('suket sehat-'+response.suket.suket_code+'.pdf');
+                            $('#pdf-sehat').css('display', 'none');
+                        });
+                    }
                 }
             });
         })
@@ -659,11 +798,17 @@
         $(document.body).on('change', '#status_sehat', function() {
             var v = $("select.status_sehat option:selected").val();
             if(v == 'sakit') {
-                $('.if-sehat').show();
+                $('#tensi').val('');
+                $('#suhu').val('');
+                $('#buta_warna').val('');
+                $('#pekerjaan').val('');
+                $('.if-sakit').show();
+                $('.if-sehat').hide();
             } else {
                 $('#butuh_istirahat').val('');
                 $('#date').val('');
-                $('.if-sehat').hide();
+                $('.if-sakit').hide();
+                $('.if-sehat').show();
             }
         })
     });

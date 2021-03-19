@@ -101,6 +101,20 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-8 payment pad_bot pull-right">
+                                        <div class="col-md-3 payment_label"> 
+                                            <label for="p_doctor"><?php echo lang('doctor'); ?></label>
+                                        </div>
+                                        <div class="col-md-9 m-bot15"> 
+                                            <select class="form-control js-example-basic-single" id="p_doctor" name="p_doctor" required> 
+                                                <?php foreach ($doctors as $doctor) { ?>
+                                                    <option value="<?php echo $doctor->id; ?>">
+                                                        <?php echo $doctor->name; ?> 
+                                                    </option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-12 panel">
                                     <div class="col-md-3 payment_label"> 

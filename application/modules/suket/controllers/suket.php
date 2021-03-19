@@ -10,11 +10,12 @@ class Suket extends MX_Controller {
         $this->load->model('patient/patient_model');
         $this->load->model('hospital_model');
         $this->load->model('suket_model');
-        $this->load->model('nurse/nurse_model');
+        $this->load->model('doctor/doctor_model');
     }
 
     public function add_antigen() {
         $data['patients'] = $this->patient_model->getPatient();
+        $data['doctors'] = $this->doctor_model->getDoctor();
         $this->load->view('home/dashboard'); // just the header file
         $this->load->view('add_atigen', $data);
         $this->load->view('home/footer'); // just the footer file
@@ -22,6 +23,7 @@ class Suket extends MX_Controller {
 
     public function add_antibody() {
         $data['patients'] = $this->patient_model->getPatient();
+        $data['doctors'] = $this->doctor_model->getDoctor();
         $this->load->view('home/dashboard'); // just the header file
         $this->load->view('add_antibody', $data);
         $this->load->view('home/footer'); // just the footer file
@@ -29,6 +31,7 @@ class Suket extends MX_Controller {
 
     public function add_suket_sehat() {
         $data['patients'] = $this->patient_model->getPatient();
+        $data['doctors'] = $this->doctor_model->getDoctor();
         $this->load->view('home/dashboard'); // just the header file
         $this->load->view('add_suket_sehat', $data);
         $this->load->view('home/footer'); // just the footer file
@@ -67,6 +70,7 @@ class Suket extends MX_Controller {
         $p_phone = $this->input->post('p_phone');
         $p_age = $this->input->post('p_age');
         $p_gender = $this->input->post('p_gender');
+        $p_doctor = $this->input->post('p_doctor');
         $status_sehat = $this->input->post('status_sehat');
         $butuh_istirahat = $this->input->post('butuh_istirahat');
         $date = $this->input->post('date');
@@ -79,6 +83,10 @@ class Suket extends MX_Controller {
         $spesimen = $this->input->post('spesimen');
         $keterangan = $this->input->post('keterangan');
         $note = $this->input->post('note');
+        $tensi = $this->input->post('tensi');
+        $suhu = $this->input->post('suhu');
+        $buta_warna = $this->input->post('buta_warna');
+        $pekerjaan = $this->input->post('pekerjaan');
 
         $previous_email = $this->ion_auth->user()->row()->email;
 
@@ -125,7 +133,12 @@ class Suket extends MX_Controller {
                 'age' => $p_age,
                 'add_date' => $add_date,
                 'registration_time' => $registration_time,
-                'how_added' => 'from_suket'
+                'how_added' => 'from_suket',
+                'doctor' => $p_doctor,
+                'ktp' => $ktp,
+                'birth_place' => $place_birth,
+                'birthdate' => $birth_date,
+                'address' => $address
             );
             $username = $this->input->post('p_name');
             // Adding New Patient
@@ -151,7 +164,6 @@ class Suket extends MX_Controller {
         if($suket_type == 1){
             $data = array(
                 'id_pasien' => $id_patient,
-                'suket_code' => $this->generateSuketCode(),
                 'ktp' => $ktp,
                 'place_birth' => $place_birth,
                 'birth_date' => $birth_date,
@@ -162,12 +174,15 @@ class Suket extends MX_Controller {
                 'status_positif' => $status,
                 'spesimen' => $spesimen,
                 'keterangan' => $keterangan,
-                'note' => $note
+                'note' => $note,
+                'tensi' => $tensi,
+                'suhu' => $suhu,
+                'buta_warna' => $buta_warna,
+                'pekerjaan' => $pekerjaan,
             );
         } else if ($suket_type == 2){
             $data = array(
                 'id_pasien' => $id_patient,
-                'suket_code' => $this->generateSuketCode(),
                 'ktp' => $ktp,
                 'place_birth' => $place_birth,
                 'birth_date' => $birth_date,
@@ -179,12 +194,15 @@ class Suket extends MX_Controller {
                 'status_ig_m' => $status_ig_m,
                 'spesimen' => $spesimen,
                 'keterangan' => $keterangan,
-                'note' => $note
+                'note' => $note,
+                'tensi' => $tensi,
+                'suhu' => $suhu,
+                'buta_warna' => $buta_warna,
+                'pekerjaan' => $pekerjaan,
             );
         } else if ($suket_type == 3){
             $data = array(
                 'id_pasien' => $id_patient,
-                'suket_code' => $this->generateSuketCode(),
                 'istirahat' => $butuh_istirahat,
                 'tanggal' => $date,
                 'status_sehat' => $status_sehat,
@@ -197,10 +215,15 @@ class Suket extends MX_Controller {
                 'suket_type' => $suket_type,
                 'spesimen' => $spesimen,
                 'keterangan' => $keterangan,
-                'note' => $note
+                'note' => $note,
+                'tensi' => $tensi,
+                'suhu' => $suhu,
+                'buta_warna' => $buta_warna,
+                'pekerjaan' => $pekerjaan,
             );
         }
         if(empty($id)){
+            $data['suket_code'] = $this->generateSuketCode();
             $this->suket_model->insertSuket($data);
             $this->session->set_flashdata('feedback', 'Added');
         } else {
@@ -237,6 +260,16 @@ class Suket extends MX_Controller {
         $id = $this->input->get('id');
         $data['patients'] = $this->patient_model->getPatient();
         $data['suket'] = $this->suket_model->getSuketById($id);
+        $data['doctor'] = null;
+        if($data['suket']->id_pasien){
+            $user = $this->patient_model->getPatientById($data['suket']->id_pasien);
+            $data['user'] = $user;
+            $dokter = null;
+            if($user->doctor != ''){
+                $dokter = $this->doctor_model->getDoctorById($user->doctor);
+            }
+            $data['doctor'] = $dokter;
+        }
         echo json_encode($data);
     }
 

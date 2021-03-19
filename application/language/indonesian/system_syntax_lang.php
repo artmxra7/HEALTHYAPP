@@ -1123,3 +1123,7 @@ $lang['edit_suket'] = 'Edit Suket';
 $lang['spesimen'] = 'Spesimen';
 $lang['keterangan'] = 'Keterangan';
 $lang['note'] = 'Catatan';
+$lang['tensi'] = 'Tensi';
+$lang['suhu'] = 'Suhu';
+$lang['buta_warna'] = 'Buta Warna';
+$lang['pekerjaan'] = 'Pekerjaan';

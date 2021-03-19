@@ -101,6 +101,20 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-8 payment pad_bot pull-right">
+                                        <div class="col-md-3 payment_label"> 
+                                            <label for="p_doctor"><?php echo lang('doctor'); ?></label>
+                                        </div>
+                                        <div class="col-md-9 m-bot15"> 
+                                            <select class="form-control js-example-basic-single" id="p_doctor" name="p_doctor" required> 
+                                                <?php foreach ($doctors as $doctor) { ?>
+                                                    <option value="<?php echo $doctor->id; ?>">
+                                                        <?php echo $doctor->name; ?> 
+                                                    </option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-12 panel">
                                     <div class="col-md-3 payment_label"> 
@@ -145,13 +159,13 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="if-sehat">
+                                <div class="if-sakit">
                                     <div class="col-md-12 panel ">
                                         <div class="col-md-3 payment_label"> 
                                             <label for="butuh_istirahat"> <?php echo lang('butuh_istirahat'); ?></label>
                                         </div>
                                         <div class="col-md-6"> 
-                                            <input type="number" class="form-control" name="butuh_istirahat" id="butuh_istirahat" required>
+                                            <input type="number" class="form-control" name="butuh_istirahat" id="butuh_istirahat">
                                         </div>
                                         <div class="col-md-3 payment_label"> 
                                             <label for="address">/<?php echo lang('hari'); ?></label>
@@ -162,7 +176,42 @@
                                             <label for="date"> <?php echo lang('date'); ?></label>
                                         </div>
                                         <div class="col-md-9"> 
-                                            <input type="text" class="form-control datepicker" id="date" readonly="" name="date" required placeholder="">
+                                            <input type="text" class="form-control datepicker" id="date" readonly="" name="date" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="if-sehat">
+                                    <div class="col-md-12 panel">
+                                        <div class="col-md-3 payment_label"> 
+                                            <label for="tensi"> <?php echo lang('tensi'); ?></label>
+                                        </div>
+                                        <div class="col-md-6"> 
+                                            <input type="number" class="form-control" name="tensi" id="tensi">
+                                        </div>
+                                        <div class="col-md-3 payment_label"> 
+                                            <label for="tensi">mmHg</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 panel">
+                                        <div class="col-md-3 payment_label"> 
+                                            <label for="suhu"> <?php echo lang('suhu'); ?></label>
+                                        </div>
+                                        <div class="col-md-6"> 
+                                            <input type="number" class="form-control" name="suhu" id="suhu">
+                                        </div>
+                                        <div class="col-md-3 payment_label"> 
+                                            <label for="tensi"><sup>&#48;</sup> C</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 panel">
+                                        <div class="col-md-3 payment_label"> 
+                                            <label for="buta_warna"><?php echo lang('buta_warna'); ?></label>
+                                        </div>
+                                        <div class="col-md-9"> 
+                                            <select class="form-control m-bot15 js-example-basic-single status" id="buta_warna" name="buta_warna"> 
+                                                <option value="iya">Iya</option>
+                                                <option value="tidak">Tidak</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -192,6 +241,14 @@
                                 </div>
                                 <div class="col-md-12 panel">
                                     <div class="col-md-3 payment_label"> 
+                                        <label for="pekerjaan"> <?php echo lang('pekerjaan'); ?></label>
+                                    </div>
+                                    <div class="col-md-9"> 
+                                        <input type="text" class="form-control" name="pekerjaan" id="pekerjaan">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 panel">
+                                    <div class="col-md-3 payment_label"> 
                                     </div>
                                     <div class="col-md-9">
                                         <button type="submit" name="submit" class="btn btn-info pull-right"><?php echo lang('submit'); ?></button>
@@ -215,15 +272,21 @@
         $(".flashmessage").delay(3000).fadeOut(100);
     });
     $(document).ready(function () {
-        $('.if-sehat').show();
+        $('.if-sehat').hide();
         $(document.body).on('change', '#status_sehat', function() {
             var v = $("select.status_sehat option:selected").val();
             if(v == 'sakit') {
-                $('.if-sehat').show();
+                $('#tensi').val('');
+                $('#suhu').val('');
+                $('#buta_warna').val('');
+                $('#pekerjaan').val('');
+                $('.if-sakit').show();
+                $('.if-sehat').hide();
             } else {
                 $('#butuh_istirahat').val('');
                 $('#date').val('');
-                $('.if-sehat').hide();
+                $('.if-sakit').hide();
+                $('.if-sehat').show();
             }
         })
     });
