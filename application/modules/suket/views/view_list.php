@@ -55,7 +55,7 @@
                                 <td class="no-print">
                                     <button type="button" class="btn btn-info btn-xs btn_width editbutton" title="<?php echo lang('edit'); ?>" data-toggle="modal" data-id="<?php echo $item->id; ?>"><i class="fa fa-edit"> </i></button>   
                                     <button type="button" class="btn btn-primary btn-xs btn_width printButton" title="<?php echo lang('print'); ?>" data-id="<?php echo $item->id; ?>"><i class="fa fa-print"> </i></button>   
-                                    <a class="btn btn-info btn-xs btn_width delete_button" title="<?php echo lang('delete'); ?>" href="index.php/suket/delete?id=<?php echo $item->id; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash-o"></i> </a>
+                                    <a class="btn btn-info btn-xs btn_width delete_button" title="<?php echo lang('delete'); ?>" href="suket/delete?id=<?php echo $item->id; ?>" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash-o"></i> </a>
                                 </td>
                             </tr>
                         <?php } ?>
@@ -271,7 +271,7 @@
                 <h4 class="modal-title">  <?php echo lang('edit_suket'); ?> </h4>
             </div>
             <div class="modal-body">
-                <form role="form" action="index.php/suket/addNew" class="clearfix row" method="post">
+                <form role="form" action="suket/addNew" class="clearfix row" method="post">
                     <input type="hidden" name="id" id="id_suket">
                     <input type="hidden" name="suket_type" id="suket_type">
                     <div class="col-md-12 panel">
@@ -550,7 +550,7 @@
             var iid = $(this).attr('data-id');
             $('#editNurseForm').trigger("reset");
             $.ajax({
-                url: 'index.php/suket/editSuketByJason?id=' + iid,
+                url: 'suket/editSuketByJason?id=' + iid,
                 method: 'GET',
                 data: '',
                 dataType: 'json',
@@ -687,7 +687,7 @@
             e.preventDefault(e);
             var iid = $(this).attr('data-id');
             $.ajax({
-                url: 'index.php/suket/getSuketByJason?id=' + iid,
+                url: 'suket/getSuketByJason?id=' + iid,
                 method: 'GET', 
                 data: '',
                 dataType: 'json', 
@@ -695,7 +695,7 @@
                 let suket_type = response.suket.suket_type;
                 let qr_wrapper = $('.qr-wrapper');
 
-                let url = `${window.location.origin}/healthyapp/index.php/antigen/suket/+response.suket.suket_code`;
+                let url = `${window.location.origin}/healthyapp/antigen/suket/+response.suket.suket_code`;
 
                 qr_wrapper.empty().qrcode({
                     text: url,
@@ -821,7 +821,7 @@
             } else if(v != ''){
                 $('.pos_client').hide();
                 $.ajax({
-                    url: 'index.php/patient/getPatientByJason?id=' + v,
+                    url: 'patient/getPatientByJason?id=' + v,
                     method: 'GET', 
                     data: '',
                     dataType: 'json', 

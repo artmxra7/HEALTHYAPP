@@ -23,7 +23,7 @@
                             </div>
                             <div class="col-lg-3"></div>
                         </div>
-                        <form role="form" action="index.php/doctor/addNew" method="post" enctype="multipart/form-data">
+                        <form role="form" action="doctor/addNew" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                 <label for="exampleInputEmail1">NIK</label>
                                 <input type="text" class="form-control" name="nik" id="exampleInputEmail1" value='<?php

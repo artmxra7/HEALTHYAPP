@@ -72,7 +72,7 @@
                 <h4 class="modal-title">  <?php echo lang('add_new_doctor'); ?></h4>
             </div>
             <div class="modal-body row">
-                <form role="form" action="index.php/doctor/addNew" class="clearfix" method="post" enctype="multipart/form-data">
+                <form role="form" action="doctor/addNew" class="clearfix" method="post" enctype="multipart/form-data">
                     <div class="form-group col-md-6">
                         <label for="exampleInputEmail1"><?php echo lang('name'); ?></label>
                         <input type="text" class="form-control" name="name" id="exampleInputEmail1" value='' placeholder="">

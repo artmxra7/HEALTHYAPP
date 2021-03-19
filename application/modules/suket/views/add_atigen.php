@@ -12,7 +12,7 @@
                     <div class="adv-table editable-table ">
                         <div class="clearfix">
                             <?php echo validation_errors(); ?>
-                            <form role="form" action="index.php/suket/addNew" class="clearfix row" method="post">
+                            <form role="form" action="suket/addNew" class="clearfix row" method="post">
                                 <input type="hidden" name="suket_type" value="1">
                                 <div class="col-md-12 panel">
                                     <div class="col-md-3 payment_label"> 
@@ -216,7 +216,7 @@
             } else if(v != ''){
                 $('.pos_client').hide();
                 $.ajax({
-                    url: 'index.php/patient/getPatientByJason?id=' + v,
+                    url: 'patient/getPatientByJason?id=' + v,
                     method: 'GET', 
                     data: '',
                     dataType: 'json', 

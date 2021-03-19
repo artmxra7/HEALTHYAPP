@@ -50,7 +50,7 @@
 
             </style>
 
-            <form class="form-signin" method="post" action="index.php/auth/login">
+            <form class="form-signin" method="post" action="auth/login">
                 <h2 class="login form-signin-heading">
                     <?php
                     $this->db->where('hospital_id', 'superadmin');
