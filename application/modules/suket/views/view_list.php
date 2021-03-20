@@ -731,7 +731,7 @@
                     $('.print_status').text(response.suket.status_positif)
                     $('.print_jenis_suket').text('Swab Tes Antigen')
                     $('.print_dokter').text(response.doctor.name)
-                    $('.print_jabatan').text(': '+response.doctor.jabatan)
+                    $('.print_jabatan').text(': '+response.doctor.department)
                     $('.print_sip').text('SIP: '+response.doctor.profile)
                     $('#pdf-antigen').show()
                     const doc = new jsPDF();
@@ -746,7 +746,7 @@
                     $('.show_status_ig_g').show()
                     $('.print_status_ig_g').text(response.suket.status_ig_g)
                     $('.print_dokter').text(response.doctor.name)
-                    $('.print_jabatan').text(': '+response.doctor.jabatan)
+                    $('.print_jabatan').text(': '+response.doctor.department)
                     $('.print_sip').text('SIP: '+response.doctor.profile)
                     $('#pdf-antigen').show()
                     const doc = new jsPDF();
