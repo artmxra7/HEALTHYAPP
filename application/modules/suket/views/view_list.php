@@ -695,7 +695,7 @@
                 let suket_type = response.suket.suket_type;
                 let qr_wrapper = $('.qr-wrapper');
 
-                let url = `${window.location.origin}/healthyapp/antigen/suket/+response.suket.suket_code`;
+                let url = `${window.location.origin}/antigen/suket/${response.suket.suket_code}`;
 
                 qr_wrapper.empty().qrcode({
                     text: url,
