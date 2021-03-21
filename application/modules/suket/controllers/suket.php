@@ -70,7 +70,6 @@ class Suket extends MX_Controller {
         $p_phone = $this->input->post('p_phone');
         $p_age = $this->input->post('p_age');
         $p_gender = $this->input->post('p_gender');
-        $p_doctor = $this->input->post('p_doctor');
         $status_sehat = $this->input->post('status_sehat');
         $butuh_istirahat = $this->input->post('butuh_istirahat');
         $date = $this->input->post('date');
@@ -87,6 +86,7 @@ class Suket extends MX_Controller {
         $suhu = $this->input->post('suhu');
         $buta_warna = $this->input->post('buta_warna');
         $pekerjaan = $this->input->post('pekerjaan');
+        $doctor = $this->input->post('doctor');
 
         $previous_email = $this->ion_auth->user()->row()->email;
 
@@ -134,7 +134,6 @@ class Suket extends MX_Controller {
                 'add_date' => $add_date,
                 'registration_time' => $registration_time,
                 'how_added' => 'from_suket',
-                'doctor' => $p_doctor,
                 'ktp' => $ktp,
                 'birth_place' => $place_birth,
                 'birthdate' => $birth_date,
@@ -179,6 +178,7 @@ class Suket extends MX_Controller {
                 'suhu' => $suhu,
                 'buta_warna' => $buta_warna,
                 'pekerjaan' => $pekerjaan,
+                'doctor' => $doctor,
             );
         } else if ($suket_type == 2){
             $data = array(
@@ -199,6 +199,7 @@ class Suket extends MX_Controller {
                 'suhu' => $suhu,
                 'buta_warna' => $buta_warna,
                 'pekerjaan' => $pekerjaan,
+                'doctor' => $doctor,
             );
         } else if ($suket_type == 3){
             $data = array(
@@ -220,6 +221,7 @@ class Suket extends MX_Controller {
                 'suhu' => $suhu,
                 'buta_warna' => $buta_warna,
                 'pekerjaan' => $pekerjaan,
+                'doctor' => $doctor,
             );
         }
         if(empty($id)){
@@ -253,6 +255,7 @@ class Suket extends MX_Controller {
         $id = $this->input->get('id');
         $data['patients'] = $this->patient_model->getPatient();
         $data['suket'] = $this->suket_model->getSuketById($id);
+        $data['doctors'] = $this->doctor_model->getDoctor();
         echo json_encode($data);
     }
 
@@ -260,16 +263,8 @@ class Suket extends MX_Controller {
         $id = $this->input->get('id');
         $data['patients'] = $this->patient_model->getPatient();
         $data['suket'] = $this->suket_model->getSuketById($id);
-        $data['doctor'] = null;
-        if($data['suket']->id_pasien){
-            $user = $this->patient_model->getPatientById($data['suket']->id_pasien);
-            $data['user'] = $user;
-            $dokter = null;
-            if($user->doctor != ''){
-                $dokter = $this->doctor_model->getDoctorById($user->doctor);
-            }
-            $data['doctor'] = $dokter;
-        }
+        $data['user'] = $this->patient_model->getPatientById($data['suket']->id_pasien);
+        $data['doctor'] = $this->doctor_model->getDoctorById($data['suket']->doctor);
         echo json_encode($data);
     }
 

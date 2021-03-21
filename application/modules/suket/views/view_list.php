@@ -62,194 +62,209 @@
 
                         </tbody>
                     </table>
-                    <div id="pdf-antigen" style="width: 595px;font-family: 'Times New Roman', Times, serif;background: #fff;width: 100%;padding-top: 2cm;padding-left: 1.9cm;padding-right: 1.9cm;padding-bottom: 3.67cm;
-                        display:none;">
+                    <div id="pdf-antigen" style="
+                        font-family: 'Times New Roman', Times, serif;
+                        background: #fff;
+                        padding-top: 30px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        display:none;
+                        width:595px!important;
+                        height:842px!important;
+                        ">
                         <div style="text-align: center;border-bottom: 2px solid #000;">
                             <div style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;">
-                                <img src="uploads/hmp-logo.png" alt="logo" width="10%">
-                                <img src="uploads/logo-text.png" alt="logo" width="85%">
+                                <img src="uploads/hmp-logo.png" alt="logo" width="68px">
+                                <img src="uploads/logo-text.png" alt="logo" width="427px">
                             </div>
-                            <p style="font-size: 18px;">Kp.Buwek Raya RT.002 RW 022 Dusun II,DesaSumberJaya,Kec.Tambun Selatan,Kab.Bekasi.Telp.021 - 89534380</p>
+                            <p style="font-size: 10px;">Kp.Buwek Raya RT.002 RW 022 Dusun II,DesaSumberJaya,Kec.Tambun Selatan,Kab.Bekasi.Telp.021 - 89534380</p>
                         </div>
-                        <h3 style="margin-top: 50px;text-align:center;text-decoration:underline;margin-bottom:50px;font-weight:bold">SURAT KETERANGAN</h3>
-                        <p style="font-size: 18px;">Yang bertanda tangan dibawah ini:</p>
-                        <table style="width: 100%;margin-bottom:50px">
+                        <h3 style="margin-top: 30px;text-align:center;text-decoration:underline;margin-bottom:30px;font-weight:bold;font-size:15px">SURAT KETERANGAN</h3>
+                        <p style="font-size: 12px;">Yang bertanda tangan dibawah ini:</p>
+                        <table style="width: 100%;margin-bottom:30px">
                             <tbody style="width: 100%;">
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:100px">Nama</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <span class="print_dokter"></span></td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:100px">Nama</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;">: <span class="print_dokter"></span></td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:100px">Jabatan</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_jabatan">: </td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:100px">Jabatan</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_jabatan">: </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <p style="font-size: 18px;">Menerangkan bahwa:</p>
-                        <table style="width: 100%;margin-bottom: 50px">
+                        <p style="font-size: 12px;">Menerangkan bahwa:</p>
+                        <table style="width: 100%;margin-bottom: 30px">
                             <tbody style="width: 100%;">
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">Nama</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_nama">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;">Nama</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_nama">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">Tempat/TglLahir</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_ttl">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;">Tempat/TglLahir</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_ttl">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">Alamat</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_alamat">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;">Alamat</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_alamat">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">Spesimen</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <b class="print_spesimen"></b></td>
+                                    <td style="border: none;font-size: 12px;padding:0px;">Spesimen</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;">: <b class="print_spesimen"></b></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <p style="font-size: 18px;margin-bottom:20px">Dari hasil pemeriksaan <span class="print_jenis_suket"></span> pada tanggal, <span class="print_tgl"></span> Saya menyatakan:</p>
-                        <p style="font-size: 18px;margin-bottom:20px"><b><i class="print_note"></i></b></p>
-                        <p style="font-size: 18px;margin-bottom:20px">Hasil Pemeriksaan:</p>
-                        <h4 style="margin-top: 20px;margin-bottom:30px;margin-left:40px;display:none" class="show_status_positif"><b>- SARS - COV2: <span class="print_status">-</span></b></h4>
-                        <h4 style="margin-top: 20px;margin-bottom:30px;margin-left:40px;display:none" class="show_status_ig_m"><b>- Repid  Tes IG- M SARS COVID 19 : <span class="print_status_ig_m">-</span></b></h4>
-                        <h4 style="margin-top: 20px;margin-bottom:30px;margin-left:40px;display:none" class="show_status_ig_g"><b>- Repid  Tes IG- G SARS COVID 19 : <span class="print_status_ig_g">-</span></b></h4>
-                        <p style="font-size: 18px;"><b>Keterangan :</b></p>
-                        <p style="font-size: 18px;margin-bottom:80px" class="print_keterangan"></p>
+                        <p style="font-size: 12px;margin-bottom:15px">Dari hasil pemeriksaan <span class="print_jenis_suket"></span> pada tanggal, <span class="print_tgl"></span> Saya menyatakan:</p>
+                        <p style="font-size: 12px;margin-bottom:15px"><b><i class="print_note"></i></b></p>
+                        <p style="font-size: 12px;margin-bottom:15px">Hasil Pemeriksaan:</p>
+                        <h4 style="margin-top: 15px;margin-bottom:15px;margin-left:40px;display:none;font-size:15px" class="show_status_positif"><b>- SARS - COV2: <span class="print_status">-</span></b></h4>
+                        <h4 style="margin-top: 15px;margin-bottom:15px;margin-left:40px;display:none;font-size:15px" class="show_status_ig_m"><b>- Repid  Tes IG- M SARS COVID 19 : <span class="print_status_ig_m">-</span></b></h4>
+                        <h4 style="margin-top: 15px;margin-bottom:15px;margin-left:40px;display:none;font-size:15px" class="show_status_ig_g"><b>- Repid  Tes IG- G SARS COVID 19 : <span class="print_status_ig_g">-</span></b></h4>
+                        <p style="font-size: 12px;"><b>Keterangan :</b></p>
+                        <p style="font-size: 12px;margin-bottom:30px" class="print_keterangan"></p>
                         <div style="width: 100%;display:flex;justify-content:space-between">
                             <div>
-                                <p style="font-size: 18px;text-align:center;margin-bottom:100px"><b>HeryudaMeda</b></p>
-                                <p style="font-size: 18px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px" class="print_dokter">(Deni Juli Setiawan)</p>
-                                <p style="font-size: 18px;text-align:center;text-decoration:underline;" class="print_sip">SIP.-</p>
+                                <p style="font-size: 12px;text-align:center;margin-bottom:80px"><b>HeryudaMeda</b></p>
+                                <p style="font-size: 12px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px" class="print_dokter">(Deni Juli Setiawan)</p>
+                                <p style="font-size: 12px;text-align:center;text-decoration:underline;" class="print_sip">SIP.-</p>
                             </div>
                             <div style="text-align:center;">
-                                <p style="font-size: 18px;text-align:center;">Bekasi, <span class="print_tgl_surat"></span></p>
+                                <p style="font-size: 12px;text-align:center;margin-bottom:5px;">Bekasi, <span class="print_tgl_surat"></span></p>
                                 <div class="qr-wrapper" data-url="{SCAN_URL}"></div>
-                                <p style="font-size: 18px;text-align:center;margin-top:10px" class="print_suket_code">NO: 1230929-ASD</p>
+                                <p style="font-size: 12px;text-align:center;margin-top:5px" class="print_suket_code">NO: 1230929-ASD</p>
                             </div>
                         </div>
                     </div>
-                    <div id="pdf-sehat" style="font-family: 'Times New Roman', Times, serif;background: #fff;width: 100%;padding-top: 2cm;padding-left: 1.9cm;padding-right: 1.9cm;padding-bottom: 3.67cm;
-                        display:none">
+                    <div id="pdf-sehat" style="
+                        font-family: 'Times New Roman', Times, serif;
+                        background: #fff;
+                        padding-top: 30px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        display:none;
+                        width:595px!important;
+                        height:842px!important;">
                         <div style="display: flex;flex-direction: row;justify-content: space-between;">
-                            <img src="uploads/hmp-logo.png" alt="logo" height="50px">
-                            <div style="padding-left: 20px;padding-right:20px">
-                                <div style="text-align: center;border-bottom: 2px solid #000;margin-bottom:15px">
-                                    <img src="uploads/logo-text.png" alt="logo" width="100%" style="margin-bottom: 20px;">
+                            <img src="uploads/hmp-logo.png" alt="logo" width="68px" height="42px">
+                            <div style="padding-left: 10px;padding-right:10px">
+                                <div style="text-align: center;border-bottom: 2px solid #000;margin-bottom:10px">
+                                    <img src="uploads/logo-text.png" alt="logo" width="427px" style="margin-bottom: 10px;">
                                 </div>
-                                <p style="font-size: 18px;text-align:center">Kp.Buwek Raya RT.002 RW 022 Dusun II,DesaSumberJaya,Kec.Tambun Selatan,Kab.Bekasi.Telp.021 - 89534380</p>
+                                <p style="font-size: 10px;text-align:center">Kp.Buwek Raya RT.002 RW 022 Dusun II,DesaSumberJaya,Kec.Tambun Selatan,Kab.Bekasi.Telp.021 - 89534380</p>
                             </div>
                         </div>
-                        <h3 style="margin-top: 50px;text-align:center;margin-bottom:50px;font-weight:bold">SURAT KETERANGAN SEHAT</h3>
-                        <table style="width: 100%;margin-bottom: 50px">
+                        <h3 style="margin-top: 10px;text-align:center;margin-bottom:30px;font-weight:bold;font-size:15px">SURAT KETERANGAN SEHAT</h3>
+                        <table style="width: 100%;margin-bottom: 30px">
                             <tbody style="width: 100%;">
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Nama</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_nama">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:200px">Nama</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_nama">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Umur</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <span class="print_umur"></span> tahun, jenis kelamin: <span class="print_jenis_kelamin"></span></td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:200px">Umur</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;">: <span class="print_umur"></span> tahun, jenis kelamin: <span class="print_jenis_kelamin"></span></td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:200px" class="print_pekerjaan">Pekerjaan</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_pekerjaan">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:200px">Pekerjaan</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_pekerjaan">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Alamat</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_alamat">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:200px">Alamat</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_alamat">: -</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <p style="font-size: 18px;margin-bottom:20px;text-indent:50px">Pada pemeriksaan yang kami lakukan pada hari ini, berada dalam kondisi <b>Sehat/Tidak Sakit</b></p>
-                        <p style="font-size: 18px;margin-bottom:20px">Harap berkepentingan menjadi maklum</p>
+                        <p style="font-size: 12px;margin-bottom:20px;text-indent:50px">Pada pemeriksaan yang kami lakukan pada hari ini, berada dalam kondisi <b>Sehat/Tidak Sakit</b></p>
+                        <p style="font-size: 12px;margin-bottom:20px">Harap berkepentingan menjadi maklum</p>
                         <table style="width: 100%;margin-bottom: 50px">
                             <tbody style="width: 100%;">
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:100px">BB</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_bb">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:100px">BB</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_bb">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:100px">TB</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_tb">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:100px">TB</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_tb">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:100px">Tensi</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_tensi">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:100px">Tensi</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_tensi">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:100px">Suhu</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_suhu">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:100px">Suhu</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_suhu">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:100px">Buta Warna</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <b class="print_buta_warna">-</b></td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:100px">Buta Warna</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;">: <b class="print_buta_warna">-</b></td>
                                 </tr>
                             </tbody>
                         </table>
                         <div style="width: 100%;display:flex;justify-content:space-between">
                             <div style="text-align:center;">
                                 <div class="qr-wrapper" data-url="{SCAN_URL}"></div>
-                                <p style="font-size: 18px;text-align:center;margin-top:10px" class="print_suket_code">NO: -</p>
+                                <p style="font-size: 12px;text-align:center;margin-top:10px" class="print_suket_code">NO: -</p>
                             </div>
                             <div>
-                                <p style="font-size: 18px;text-align:center;margin-bottom:60px">Bekasi, <span class="print_tgl_surat"></span></p>
-                                <p style="font-size: 18px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px" class="print_dokter"></p>
+                                <p style="font-size: 12px;text-align:center;margin-bottom:60px">Bekasi, <span class="print_tgl_surat"></span></p>
+                                <p style="font-size: 12px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px" class="print_dokter"></p>
                             </div>
                         </div>
                     </div>
                     <div id="pdf-sakit" style="
                         font-family: 'Times New Roman', Times, serif;
                         background: #fff;
-                        width: 100%;
-                        padding-top: 1.2cm;
-                        padding-left: 3cm;
-                        padding-right: 3cm;
-                        padding-bottom: 2cm;
                         position: relative;
+                        padding-top: 30px;
+                        padding-left: 80px;
+                        padding-right: 80px;
                         display:none;
+                        height:421px!important;
+                        width:595px!important;
                         ">
-                        <div style="text-align:center;position: absolute;top: 20px;right: 20px;">
+                        <div style="text-align:center;position: absolute;top: 10px;right: 10px;">
                             <div class="qr-wrapper" style="margin: auto;"></div>
-                            <p style="font-size: 18px;text-align:center;margin-top:10px" class="print_suket_code">NO: 1230929-ASD</p>
+                            <p style="font-size: 10px;text-align:center;margin-top:5px" class="print_suket_code">NO: 1230929-ASD</p>
                         </div>
                         <div style="display: flex;flex-direction: row;justify-content: space-between;">
-                            <img src="uploads/hmp-logo.png" alt="logo" height="50px">
-                            <div style="padding-left: 20px;padding-right:20px">
-                                <div style="text-align: center;border-bottom: 2px solid #000;margin-bottom:15px">
-                                    <img src="uploads/logo-text.png" alt="logo" width="100%" style="margin-bottom: 20px;">
+                            <img src="uploads/hmp-logo.png" alt="logo" height="40px">
+                            <div style="padding-left: 10px;padding-right:10px">
+                                <div style="text-align: center;border-bottom: 2px solid #000;margin-bottom:10px">
+                                    <img src="uploads/logo-text.png" alt="logo" width="100%" style="margin-bottom: 10px;">
                                 </div>
-                                <p style="font-size: 18px;text-align:center">Kp.Buwek Raya RT.002 RW 022 Dusun II,DesaSumberJaya,Kec.Tambun Selatan,Kab.Bekasi.Telp.021 - 89534380</p>
+                                <p style="font-size: 10px;text-align:center">Kp.Buwek Raya RT.002 RW 022 Dusun II,DesaSumberJaya,Kec.Tambun Selatan,Kab.Bekasi.Telp.021 - 89534380</p>
                             </div>
                         </div>
-                        <h3 style="margin-top: 10px;text-align:center;margin-bottom:20px;font-weight:bold">SURAT KETERANGAN SAKIT</h3>
-                        <p style="font-size: 18px;margin-bottom:0px;">Yang bertanda tangan dibawah ini:</p>
-                        <table style="width: 100%;margin-bottom: 20px">
+                        <h3 style="margin-top: 5px;text-align:center;margin-bottom:5px;font-weight:bold;font-size:14px">SURAT KETERANGAN SAKIT</h3>
+                        <p style="font-size: 12px;margin-bottom:0px;">Yang bertanda tangan dibawah ini:</p>
+                        <table style="width: 100%;margin-bottom: 15px">
                             <tbody style="width: 100%;">
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Nama</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_nama">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:200px">Nama</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_nama">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Umur</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;">: <span class="print_umur"></span> tahun, jenis kelamin: <span class="print_jenis_kelamin"></span></td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:200px">Umur</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;">: <span class="print_umur"></span> tahun, jenis kelamin: <span class="print_jenis_kelamin"></span></td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Pekerjaan</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_pekerjaan">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:200px">Pekerjaan</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_pekerjaan">: -</td>
                                 </tr>
                                 <tr>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;width:200px">Alamat</td>
-                                    <td style="border: none;font-size: 18px;padding-left:0px;" class="print_alamat">: -</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;width:200px">Alamat</td>
+                                    <td style="border: none;font-size: 12px;padding:0px;" class="print_alamat">: -</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <p style="font-size: 18px;margin-bottom:0px;">Perlu beristirahat karena sakit selama <span class="print_istirahat"></span> hari, terhitung dari <span class="print_tgl_mulai"></span> s/d <span class="print_tgl_akhir"></span></p>
-                        <p style="font-size: 18px;margin-bottom:10px">Harap berkepentingan menjadi maklum</p>
+                        <p style="font-size: 12px;margin-bottom:0px;">Perlu beristirahat karena sakit selama <span class="print_istirahat"></span> hari, terhitung dari <span class="print_tgl_mulai"></span> s/d <span class="print_tgl_akhir"></span></p>
+                        <p style="font-size: 12px;margin-bottom:10px">Harap berkepentingan menjadi maklum</p>
                         <div style="width: 100%;display:flex;justify-content:space-between">
                             <div></div>
                             <div>
-                                <p style="font-size: 18px;text-align:center;margin-bottom:0px">Bekasi, <span class="print_tgl_surat"></span></p>
-                                <p style="font-size: 18px;text-align:center;margin-bottom:50px">Dokter pemeriksa</p>
-                                <p style="font-size: 18px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px" class="print_dokter"></p>
+                                <p style="font-size: 12px;text-align:center;margin-bottom:0px">Bekasi, <span class="print_tgl_surat"></span></p>
+                                <p style="font-size: 12px;text-align:center;margin-bottom:40px">Dokter pemeriksa</p>
+                                <p style="font-size: 12px;text-align:center;font-weight:bold;text-decoration:underline;margin-bottom:0px" class="print_dokter"></p>
                             </div>
                         </div>
                     </div>
@@ -529,6 +544,15 @@
                     </div>
                     <div class="col-md-12 panel">
                         <div class="col-md-3 payment_label"> 
+                            <label for="doctor"><?php echo lang('doctor'); ?></label>
+                        </div>
+                        <div class="col-md-9"> 
+                            <select class="form-control js-example-basic-single" id="doctor" name="doctor" required> 
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12 panel">
+                        <div class="col-md-3 payment_label"> 
                         </div>
                         <div class="col-md-9">
                             <button type="submit" name="submit" class="btn btn-info pull-right"><?php echo lang('submit'); ?></button>
@@ -562,8 +586,18 @@
                                     ${response.patients[i].name}
                                 </option>`;   
                 }
-                $('#name_select').append(option).end();
+                let optionDoctor = null;
+                for (let i = 0; i < response.doctors.length; i++) {
+                    optionDoctor += `<option value="${response.doctors[i].id}" ${response.doctors[i].id == response.suket.doctor ? 'selected' : null} >
+                                    ${response.doctors[i].name}
+                                </option>`;   
+                }
+                $('#name_select').append(null).append(option).end();
+                $('#doctor').append(null).append(optionDoctor).end();
+
                 $("#name_select").val(response.suket.id_pasien)
+                $("#doctor").val(response.suket.doctor)
+
                 $("#ktp").val(response.suket.ktp)
                 $("#place_birth").val(response.suket.place_birth)
                 $("#birth_date").val(response.suket.birth_date)
@@ -696,14 +730,13 @@
                 let qr_wrapper = $('.qr-wrapper');
 
                 let url = `${window.location.origin}/antigen/suket/${response.suket.suket_code}`;
-
                 qr_wrapper.empty().qrcode({
                     text: url,
                     background: '#fff',
                     mode: 5,
                     render: "image",
                     fontname: "Nunito",
-                    size: suket_type == 1 || suket_type == 2 ? 150 : 100,
+                    size: suket_type == 3 && response.suket.status_sehat == 'sakit' ? 80 : 100,
                     ecLevel: "H",
                     minVersion: 3,
                     quiet: 5,
@@ -727,6 +760,8 @@
                 $('.print_note').text(response.suket.note)
                 $('.print_tgl_surat').text(tanggal_surat)
                 if(response.suket.suket_type == 1){
+                    $('.show_status_ig_m').hide()
+                    $('.show_status_ig_g').hide()
                     $('.show_status_positif').show();
                     $('.print_status').text(response.suket.status_positif)
                     $('.print_jenis_suket').text('Swab Tes Antigen')
@@ -734,13 +769,14 @@
                     $('.print_jabatan').text(': '+response.doctor.department)
                     $('.print_sip').text('SIP: '+response.doctor.profile)
                     $('#pdf-antigen').show()
-                    const doc = new jsPDF();
+                    const doc = new jsPDF('p','mm',[297, 210]);
                     doc.addHTML($('#pdf-antigen')[0], function () {
                         doc.save('antigen-'+response.suket.suket_code+'.pdf');
                         $('#pdf-antigen').css('display', 'none');
                     });
                 } else if(response.suket.suket_type == 2){
                     $('.print_jenis_suket').text('Antibody')
+                    $('.show_status_positif').hide()
                     $('.show_status_ig_m').show()
                     $('.print_status_ig_m').text(response.suket.status_ig_m)
                     $('.show_status_ig_g').show()
@@ -749,7 +785,7 @@
                     $('.print_jabatan').text(': '+response.doctor.department)
                     $('.print_sip').text('SIP: '+response.doctor.profile)
                     $('#pdf-antigen').show()
-                    const doc = new jsPDF();
+                    const doc = new jsPDF('p','mm',[297, 210]);
                     doc.addHTML($('#pdf-antigen')[0], function () {
                         doc.save('antibody-'+response.suket.suket_code+'.pdf');
                         $('#pdf-antigen').css('display', 'none');
@@ -771,7 +807,11 @@
                         $('.print_tgl_mulai').text(tanggal)
                         $('.print_tgl_akhir').text(tanggalAkhir)
                         $('#pdf-sakit').show()
-                        const doc = new jsPDF('l');
+                        const doc = new jsPDF({
+                            orientation: "landscape",
+                            unit: "in",
+                            format: [6.1979166667, 4.3854166667]
+                        });
                         doc.addHTML($('#pdf-sakit')[0], function () {
                             doc.save('suket sakit-'+response.suket.suket_code+'.pdf');
                             $('#pdf-sakit').css('display', 'none');
@@ -783,7 +823,7 @@
                         $('.print_suhu').html(': '+response.suket.suhu+' <sup>&#48;</sup>C')
                         $('.print_buta_warna').text(response.suket.buta_warna)
                         $('#pdf-sehat').show()
-                        const doc = new jsPDF();
+                        const doc = new jsPDF('p','mm',[297, 210]);
                         doc.addHTML($('#pdf-sehat')[0], function () {
                             doc.save('suket sehat-'+response.suket.suket_code+'.pdf');
                             $('#pdf-sehat').css('display', 'none');

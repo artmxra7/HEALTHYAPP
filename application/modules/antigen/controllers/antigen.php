@@ -13,16 +13,8 @@ class Antigen extends MX_Controller {
 	function suket($suket_code)
 	{
         $data['suket'] = $this->suket_model->getSuketBySuketCode($suket_code);
-        $data['doctor'] = null;
-        if($data['suket']->id_pasien){
-            $user = $this->patient_model->getPatientById($data['suket']->id_pasien);
-            $data['user'] = $user;
-            $dokter = null;
-            if($user->doctor != ''){
-                $dokter = $this->doctor_model->getDoctorById($user->doctor);
-            }
-            $data['doctor'] = $dokter;
-        }
+        $data['user'] = $this->patient_model->getPatientById($data['suket']->id_pasien);
+        $data['doctor'] = $this->doctor_model->getDoctorById($data['suket']->doctor);
 		$this->_render_page('suket/suket', $data);
 	}
 

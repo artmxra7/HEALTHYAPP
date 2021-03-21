@@ -1371,25 +1371,25 @@
                             </a>
                             <ul class="sub">
                                 <li>
-                                    <a href="suket/add_antigen">
+                                    <a href="index.php/suket/add_antigen">
                                         <i class="fa fa-plus"></i>
                                         <?php echo lang('add_antigen'); ?>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="suket/add_antibody">
+                                    <a href="index.php/suket/add_antibody">
                                         <i class="fa fa-plus"></i>
                                         <?php echo lang('add_anti_body'); ?>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="suket/add_suket_sehat">
+                                    <a href="index.php/suket/add_suket_sehat">
                                         <i class="fa fa-plus"></i>
                                         <?php echo lang('add_suket_sehat'); ?>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="suket/view_list">
+                                    <a href="index.php/suket/view_list">
                                         <i class="fa fa-list"></i>
                                         <?php echo lang('view_list'); ?>
                                     </a>
