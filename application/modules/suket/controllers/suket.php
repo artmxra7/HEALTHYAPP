@@ -73,6 +73,7 @@ class Suket extends MX_Controller {
         $status_sehat = $this->input->post('status_sehat');
         $butuh_istirahat = $this->input->post('butuh_istirahat');
         $date = $this->input->post('date');
+        date_default_timezone_set('Asia/Jakarta');
         $add_date = date('m/d/y');
         $status_ig_m = $this->input->post('status_ig_m');
         $status_ig_g = $this->input->post('status_ig_g');
